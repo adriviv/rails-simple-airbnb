@@ -1,10 +1,10 @@
-Task.destroy_all
+Flat.destroy_all
 
 10.times do
-  Task.create(
+  Flat.create(
     name: Faker::Restaurant.name,
-    address:Faker::Restaurant.description,
-    description: Faker::Address.street_address,
+    address:Faker::Address.street_address,
+    description:Faker::Restaurant.description,
     price_per_night: Random.rand(35...150),
     number_of_guests: Random.rand(8)
     )

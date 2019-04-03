@@ -1,6 +1,6 @@
-class CreateTasks < ActiveRecord::Migration[5.2]
+class CreateFlats < ActiveRecord::Migration[5.2]
   def change
-    create_table :tasks do |t|
+    create_table :flats do |t|
       t.string :name
       t.string :address
       t.text :description

@@ -1,0 +1,14 @@
+<h1>Your are at The index</h1>
+
+<%= link_to "add a flat", new_flat_path  %>
+
+<% @flats.each do |flat|  %>
+<h2><%= flat.name %></h2>
+<p><%= flat.description %></p>
+<p><%= flat.price_per_night %> $ per night </p>
+<p><%= flat.number_of_guests %> number max of guest</p>
+
+<%= link_to "more details", flat_path(flat)  %>
+<%= link_to "modify", edit_flat_path(flat)  %>
+<% end %>
+
